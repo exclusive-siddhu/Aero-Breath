@@ -1,0 +1,201 @@
+/* AeroBreath Register View - Strict Flat Neobrutalism Dark / Light */
+.mockup-background {
+    width: 100%;
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 16px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: var(--bg-dark, #0b0b0b);
+}
+
+.mockup-glass-card {
+    background: var(--bg-card, #151515);
+    border: 1px solid var(--border-color, #2e2e2e);
+    border-radius: 8px;
+    padding: 36px 36px;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: none !important;
+    box-sizing: border-box;
+    color: var(--text-main, #ffffff);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.mockup-glass-card:hover {
+    border-color: var(--accent-neon, #00FF00);
+}
+
+.mockup-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.mockup-header h2 {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color: var(--text-main, #ffffff);
+}
+
+.cyan-text {
+    color: var(--accent-neon, #00FF00);
+}
+
+.mockup-header p {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--text-muted, #94a3b8);
+    margin: 6px 0 0 0;
+    text-transform: uppercase;
+}
+
+.mockup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.mockup-title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--text-main, #ffffff);
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.mockup-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mockup-input-container input,
+.mockup-select {
+    width: 100%;
+    background: var(--bg-input, #0a0a0a);
+    border: 1px solid var(--border-color, #2e2e2e);
+    border-radius: 8px;
+    padding: 13px 16px;
+    font-size: 14px;
+    color: var(--text-main, #ffffff);
+    outline: none;
+    box-shadow: none !important;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.mockup-input-container input::placeholder {
+    color: var(--text-subtle, #64748b);
+}
+
+.mockup-input-container input:focus,
+.mockup-select:focus {
+    border-color: var(--accent-neon, #00FF00) !important;
+}
+
+.mockup-select option {
+    background-color: var(--bg-card, #151515);
+    color: var(--text-main, #ffffff);
+}
+
+.mockup-btn {
+    background: var(--accent-neon, #00FF00) !important;
+    border: 1px solid var(--accent-neon, #00FF00) !important;
+    color: #000000 !important;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: none !important;
+    transition: all 0.15s ease;
+    margin-top: 6px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.mockup-btn:hover {
+    background: var(--accent-hover, #00dd00) !important;
+    filter: brightness(1.05);
+}
+
+.mockup-btn:active {
+    transform: scale(0.99);
+}
+
+.neon-trail-svg {
+    display: none !important;
+}
+
+/* =========================================================
+   LIGHT THEME OVERRIDES FOR REGISTER
+   ========================================================= */
+body.light-theme .mockup-background,
+[data-theme="light"] .mockup-background {
+    background-color: #f4f5f7;
+}
+
+body.light-theme .mockup-glass-card,
+[data-theme="light"] .mockup-glass-card {
+    background: #ffffff;
+    border-color: #d1d5db;
+    color: #111827;
+}
+
+body.light-theme .mockup-glass-card:hover,
+[data-theme="light"] .mockup-glass-card:hover {
+    border-color: #059669;
+}
+
+body.light-theme .mockup-header h2,
+body.light-theme .mockup-title,
+[data-theme="light"] .mockup-header h2,
+[data-theme="light"] .mockup-title {
+    color: #111827;
+}
+
+body.light-theme .mockup-header p,
+[data-theme="light"] .mockup-header p {
+    color: #4b5563;
+}
+
+body.light-theme .mockup-input-container input,
+body.light-theme .mockup-select,
+[data-theme="light"] .mockup-input-container input,
+[data-theme="light"] .mockup-select {
+    background: #ffffff;
+    border-color: #d1d5db;
+    color: #111827;
+}
+
+body.light-theme .mockup-input-container input:focus,
+body.light-theme .mockup-select:focus,
+[data-theme="light"] .mockup-input-container input:focus,
+[data-theme="light"] .mockup-select:focus {
+    border-color: #059669 !important;
+}
+
+body.light-theme .mockup-select option,
+[data-theme="light"] .mockup-select option {
+    background: #ffffff;
+    color: #111827;
+}
+
+body.light-theme .mockup-btn,
+[data-theme="light"] .mockup-btn {
+    background: #059669 !important;
+    border-color: #059669 !important;
+    color: #ffffff !important;
+}
+
+body.light-theme .mockup-btn:hover,
+[data-theme="light"] .mockup-btn:hover {
+    background: #047857 !important;
+}

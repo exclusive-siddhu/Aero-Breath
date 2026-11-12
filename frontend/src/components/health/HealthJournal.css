@@ -1,0 +1,198 @@
+/* =========================================================
+   AEROBREATH HEALTH JOURNAL - LIGHT GLASSMORPHISM THEME
+   Matching Navbar and Login visual language
+   ========================================================= */
+
+.health-dashboard-root {
+    min-height: calc(100vh - 120px);
+    padding: 10px 0 40px 0;
+    color: var(--text-main, #1e293b);
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+/* Main Container Constraints */
+.health-content {
+    width: 100%;
+    max-width: 900px;
+}
+
+.health-page-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: var(--text-main, #1e293b);
+    letter-spacing: -0.02em;
+}
+
+/* Frosted Glass Panels */
+.glass-panel {
+    background: var(--glass-bg, rgba(255, 255, 255, 0.45));
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.7));
+    border-radius: 24px;
+    padding: 32px 36px;
+    box-shadow: var(--glass-shadow, 0 8px 32px 0 rgba(31, 38, 135, 0.07));
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+    box-shadow: var(--glass-shadow-hover, 0 12px 40px 0 rgba(31, 38, 135, 0.12));
+}
+
+.panel-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--text-main, #1e293b);
+    letter-spacing: -0.01em;
+}
+
+/* Form Styling */
+.health-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 12px;
+    color: var(--text-muted, #64748b);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.glass-input, .glass-textarea {
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 14px 16px;
+    font-size: 14px;
+    color: var(--text-main, #1e293b);
+    outline: none;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.glass-textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.glass-input::placeholder, .glass-textarea::placeholder {
+    color: var(--text-muted, #94a3b8);
+}
+
+.glass-input:focus, .glass-textarea:focus {
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-color: #ffffff !important;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02), 0 0 0 3px rgba(255, 255, 255, 0.4) !important;
+}
+
+.glass-input option {
+    background: #ffffff;
+    color: var(--text-main, #1e293b);
+}
+
+/* Submit Button */
+.glass-btn {
+    background: var(--accent-color, #3b82f6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25) !important;
+    transition: all 0.2s ease;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.glass-btn:hover {
+    background: #2563eb !important;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.35) !important;
+}
+
+.glass-btn:active {
+    transform: scale(0.99);
+}
+
+/* Glass Table Styling */
+.table-responsive {
+    overflow-x: auto;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.glass-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+}
+
+.glass-table th, .glass-table td {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-table th {
+    color: var(--text-muted, #64748b);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    background: rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+}
+
+.glass-table td {
+    color: var(--text-main, #1e293b);
+}
+
+.glass-table tr:hover td {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.glass-table tr:last-child td {
+    border-bottom: none;
+}
+
+.empty-state {
+    text-align: center !important;
+    color: var(--text-muted, #64748b) !important;
+    padding: 36px !important;
+    background: transparent !important;
+}
+
+.mt-4 {
+    margin-top: 2rem;
+}
+
+/* Strictly disable floating ribbons & trail animations */
+.neon-trail-svg,
+.cursor-sparkle {
+    display: none !important;
+}
